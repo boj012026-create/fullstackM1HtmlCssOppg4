@@ -2,6 +2,7 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 :root {
@@ -17,7 +18,8 @@
     --pad: 30px;
     --marg: 30px;
     --gap: 50;
-}
+    --round-edge: 4em 4em 0 0;
+ }
 
 /*Fonts*/
 h1, h2, h3 {
@@ -38,4 +40,24 @@ body {
 /*Tags*/
 body {
     background-color: var(--light-beige);
+}
+
+header {
+    background-color: var(--brown);
+    padding: var(--pad);
+}
+
+/*classes*/
+.header-top {
+    border-radius: var(--round-edge);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    h1  {
+	text-size: 4em;
+	width: 30vw;
+	text-shadow: 4px 4px 2px #4445;
+    }
 }
