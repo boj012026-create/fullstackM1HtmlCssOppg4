@@ -1,0 +1,20 @@
+/*CSS reset*/
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    /*variables*/
+    /*colors*/
+    --green: #ccd5ae;
+    --brown: #d4a373;
+    --light-green: #e9edc9;
+    --light-brown: #faedcd;
+    --light-beige: #fefae0;
+
+    /*sizes*/
+    --pad: 30px;
+    --marg: 30px;
+    --gap: 50;
+}
