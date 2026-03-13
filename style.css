@@ -18,7 +18,7 @@
     --pad: 30px;
     --marg: 30px;
     --gap: 50;
-    --round-edge: 4em 4em 0 0;
+    /*--round-edge:  40px 40px 0 0;*/
  }
 
 /*Fonts*/
@@ -43,17 +43,22 @@ body {
 }
 
 header {
+    border-radius: 4em 4em 0 0;
     background-color: var(--brown);
     padding: var(--pad);
 }
 
+img {
+    width: 100%;
+}
+
 /*classes*/
 .header-top {
-    border-radius: var(--round-edge);
+    border-radius: 2.5em 2.5em 0 0;
     overflow: hidden;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     text-align: center;
     h1  {
 	text-size: 4em;
