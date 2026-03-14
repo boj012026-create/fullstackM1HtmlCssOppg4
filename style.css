@@ -14,10 +14,12 @@
     --light-brown: #faedcd;
     --light-beige: #fefae0;
 
+    --shadow: 4px 4px 4px #222a;
+
     /*Sizes*/
     --pad: 30px;
     --marg: 30px;
-    --gap: 50;
+    --gap: 50px;
  }
 
 /*Fonts*/
@@ -42,9 +44,18 @@ body {
 }
 
 header {
+    display: flex;
+    flex-direction: column;
     border-radius: 4em 4em 0 0;
     background-color: var(--brown);
     padding: var(--pad);
+    align-items: center;
+    justify-content: space-around;
+    gap: 1em;
+    nav {
+	display: flex;
+	gap: 1em; 
+    }
 }
 
 img {
@@ -53,7 +64,7 @@ img {
 
 /*classes*/
 .header-top {
-    border-radius: 2.5em 2.5em 0 0;
+    border-radius: 2em 2em 0 0;
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -64,4 +75,18 @@ img {
 	width: 8em; /*gets h1 in one line*/
 	text-shadow: 4px 4px 2px #4445; /*original values didn't match figma*/
     }
+}
+
+.nav-btn {
+    display: flex;
+    /*align-items: center;*/
+    /*justify-content: start;*/
+    font-size: 20px; 
+    text-decoration: none;
+    color: black;
+    gap: 0.5em;
+    background-color: var(--green);
+    box-shadow: var(--shadow);
+    padding: 0.1em 1em;
+    border-radius: 1em 1em 0 0;
 }
