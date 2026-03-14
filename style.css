@@ -14,8 +14,10 @@
     --light-brown: #faedcd;
     --light-beige: #fefae0;
 
-    --shadow: 4px 4px 4px #222a;
-
+    --shadow: #222a;
+    /*box-shadow presets*/
+    --tiny-shadow: 4px 4px 4px var(--shadow);
+    --big-shadow: 8px 8px 8px var(--shadow);
     /*Sizes*/
     --pad: 30px;
     --marg: 30px;
@@ -48,6 +50,7 @@ header {
     flex-direction: column;
     border-radius: 4em 4em 0 0;
     background-color: var(--brown);
+    box-shadow: var(--big-shadow);
     padding: var(--pad);
     align-items: center;
     justify-content: space-around;
@@ -63,6 +66,9 @@ img {
 }
 
 /*classes*/
+
+/*objects*/
+
 .header-top {
     border-radius: 2em 2em 0 0;
     overflow: hidden;
@@ -86,7 +92,8 @@ img {
     color: black;
     gap: 0.5em;
     background-color: var(--green);
-    box-shadow: var(--shadow);
+    box-shadow: var(--tiny-shadow); 
     padding: 0.1em 1em;
     border-radius: 1em 1em 0 0;
 }
+
