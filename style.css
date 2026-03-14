@@ -48,6 +48,7 @@ body {
 header {
     display: flex;
     min-width: fit-content;
+    margin: var(--marg);
     flex-direction: column;
     border-radius: 4em 4em 0 0;
     background-color: var(--brown);
@@ -58,6 +59,8 @@ header {
     gap: 1em;
     nav {
 	display: flex;
+	flex-wrap: wrap;
+	width: fit-content;
 	gap: 1em; 
     }
 }
