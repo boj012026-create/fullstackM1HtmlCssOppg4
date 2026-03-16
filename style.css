@@ -20,9 +20,9 @@
     --big-shadow: 8px 8px 8px var(--shadow);
 
     /*main default sizes*/
-    --pad: 30px;
-    --marg: 30px;
-    --gap: 50px;
+    --pad: 2em;
+    --marg: 2em;
+    --gap: 3em;
  }
 
 /*Fonts*/
@@ -71,8 +71,12 @@ img {
 }
 
 main {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap);
     background-color: var(--light-brown);
     margin: var(--marg);
+    padding: var(--pad);
 }
 
 /*classes*/
@@ -109,4 +113,29 @@ main {
 .btn-clicked {
     border: 8px solid var(--light-brown);
     border-bottom-width: 0;
+}
+
+.card {
+    background-color: var(--light-green);
+    display: flex;
+    justify-content: space-around;
+    border-radius: 0.5em;
+    box-shadow: var(--tiny-shadow);
+    align-items: start;
+    padding: var(--pad);
+    gap: var(--gap);
+    img {
+	width: 45%;
+    }
+}
+
+.row-reverse {
+    flex-direction: row-reverse;
+}
+
+.column {
+    flex-direction: column;
+    img {
+	width: 100%;
+    }
 }
