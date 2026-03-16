@@ -21,11 +21,11 @@
 	    <figure><img src="./img/waves.jpg" alt="chocolate colored wavy lines"></figure>
 	</section>
 	<nav>
-	    <a class="nav-btn btn-clicked" href="./index.html">
+	    <a class="nav-btn" href="./index.html">
 		<img src="./img/icon/home.svg" alt="outline of tiny house">
 		Hjem
 	    </a>
-	    <a class="nav-btn" href="./booking.html">
+	    <a class="nav-btn btn-clicked" href="./booking.html">
 		<img src="./img/icon/booking.svg" alt="outline of checkboard with check mark">
 		Booking
 	    </a>
@@ -41,11 +41,37 @@
     </header>
     <main>
 	    <article>
-	        <h2>Velkommen til CraftsVilla</h2>
-	        <div class="card">
-	            <img src="./img/man_paint.jpg" alt="man cast i shadow paints on a canvas, with yellow and red flowery paintings on a tarp wall">
-	            <p>Elit provident consequatur qui optio qui illum accusantium? Iusto Eaque tenetur illum sunt labore minus Consectetur fugit itaque laudantium culpa accusamus voluptatum atque, fuga. Nulla deleniti atque hic itaque quos. Unde quibusdam illum minima odio ratione Commodi cum sunt porro excepturi perspiciatis Molestiae nihil cum tenetur porro cupiditate explicabo.</p>
-	        </div>
+	        <h2>Booking</h2>
+	        <form action="submit">
+		    <h4>Mosaikk - 400kr</h4>
+	            <input type="radio" id="mosaik" name="art-form"
+			value="mosaikk">
+	            <label class="field" for="mosaik">
+Ramme, A4-størrelse treplate, små fargede steiner, gummi.
+		    </label>
+		    <h4>Akvarellmaling - 200kr</h4>
+	            <input type="radio" id="akvarellmaling" name="art-form"
+			value="mosaikk">
+	            <label class="field" for="akvarellmaling">
+			Ramme, Akrylpapir med designmal, akvarellfarger, pensler.
+		    </label>
+		    <h4>Lerretsmaling - 300kr</h4>
+	            <input type="radio" id="lerretsmaling" name="art-form"
+			value="lerretsmaling">
+	            <label class="field" for="lerretsmaling">
+			Ramme, akrylpapir med designmal, akrylfarger, pensler
+		    </label>
+		    <h4>Navn</h4>
+		    <input id="user-name" type="text" placeholder="Ola Nordmann">
+		    <h4>Epost</h4>
+		    <input id="user-email" type="email" placeholder="Ola@outllok.no">
+		    <h4>Dato</h4>
+		    <input id="booking-date" type="date" placeholder="01.01.2026">
+
+	            <button class="submit-btn">
+			<img src="./img/icon/cart_check.svg" alt="outline of cart with a check mark">
+			Bestill</button>
+	        </form>
 	    </article>
 	    <article>
 	        <h2>Høst-Kunst 2025</h2>
