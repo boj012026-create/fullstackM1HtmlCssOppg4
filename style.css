@@ -79,12 +79,6 @@ main {
     padding: var(--pad);
 }
 
-form {
-    background-color: var(--light-green);
-    border-radius: 0.5em;
-    box-shadow: var(--tiny-shadow);
-    padding: var(--pad);
-}
 
 input {
     margin-bottom: 1.5em;
@@ -161,4 +155,39 @@ input {
 
 .field {
     background-color: var(--light-beige);
+}
+
+.booking {
+    background-color: var(--light-green);
+    border-radius: 0.5em;
+    box-shadow: var(--tiny-shadow);
+    padding: var(--pad);
+    width: 47%;
+}
+
+.double-columns {
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.img-card {
+    background-color: var(--light-green);
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.5em;
+    box-shadow: var(--tiny-shadow);
+    align-items: center;
+    padding: var(--pad);
+    width: 45%;
+    height: 30vh;
+    img {
+	max-height: 100%;
+    }
+    overflow: hidden;
+}
+
+/*id's*/
+#gallery {
+    flex-direction: row;
+    flex-wrap: wrap;
 }
