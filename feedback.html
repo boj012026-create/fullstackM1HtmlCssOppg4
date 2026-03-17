@@ -21,7 +21,7 @@
 	    <figure><img src="./img/waves.jpg" alt="chocolate colored wavy lines"></figure>
 	</section>
 	<nav>
-	    <a class="nav-btn btn-clicked" href="./index.html">
+	    <a class="nav-btn" href="./index.html">
 		<img src="./img/icon/home.svg" alt="outline of tiny house">
 		Hjem
 	    </a>
@@ -33,25 +33,54 @@
 		<img src="./img/icon/gallery.svg" alt="outline square with muntain and sun">
 		Galleri
 	    </a>
-	    <a class="nav-btn" href="./feedback.html">
+	    <a class="nav-btn btn-clicked" href="./feedback.html">
 		<img src="./img/icon/feedback.svg" alt="outline of person, with speech boublee">
 		Ris & Ros
 	    </a>
 	</nav>
     </header>
-    <main>
+    <main id="feedback">
 	    <article>
-	        <h2>Velkommen til CraftsVilla</h2>
+	        <h2>Ris og Ros</h2>
 	        <div class="card">
-	            <img src="./img/man_paint.jpg" alt="man cast i shadow paints on a canvas, with yellow and red flowery paintings on a tarp wall">
+	            <img src="./img/flower_aqaurel.jpg" alt="man cast i shadow paints on a canvas, with yellow and red flowery paintings on a tarp wall">
 	            <p>Elit provident consequatur qui optio qui illum accusantium? Iusto Eaque tenetur illum sunt labore minus Consectetur fugit itaque laudantium culpa accusamus voluptatum atque, fuga. Nulla deleniti atque hic itaque quos. Unde quibusdam illum minima odio ratione Commodi cum sunt porro excepturi perspiciatis Molestiae nihil cum tenetur porro cupiditate explicabo.</p>
 	        </div>
 	    </article>
-	    <article>
-	        <h2>Høst-Kunst 2025</h2>
-	        <div class="card row-reverse">
-	            <img src="./img/abstract_canvas.jpg" alt="colorfull abstract painting with black lines barelt giving the oulinesof a happy bunny or puppy">
-	            <p>Elit provident consequatur qui optio qui illum accusantium? Iusto Eaque tenetur illum sunt labore minus Consectetur fugit itaque laudantium culpa accusamus voluptatum atque, fuga. Nulla deleniti atque hic itaque quos. Unde quibusdam illum minima odio ratione Commodi cum sunt porro excepturi perspiciatis Molestiae nihil cum tenetur porro cupiditate explicabo.</p>
+	    <article class="booking">
+	        <form action="submit">
+		    </label>
+		    <h4>Navn</h4>
+		    <input id="user-name" type="text" placeholder="Ola Nordmann">
+		    <h4>Epost</h4>
+		    <input id="user-email" type="email" placeholder="Ola@outllok.no">
+		    <h4>Tilbakemelding</h4>
+		    <textarea id="user-feedback" placeholder="Din tilbakemelding" name="user-feedback" rows="10" cols="30">
+		    </textarea>
+	            <button class="submit-btn">
+			<img src="./img/icon/feedback.svg" alt="outline of cart with a check mark">
+			Send
+		    </button>
+	        </form>
+	    </article>
+	    <article class="comment">
+	        <h2>Malingen kunne ikke spises!!!!</h2>
+	        <div>
+	            <figure>
+	                <img src="./img/man_paint.jpg" alt="man in shadow paint on canvas, tellow flower pictures on tarp wall in background">
+	                <figcaption>Elvis Presley</figcaption>
+	            </figure>
+	            <p>Amet alias eius enim cum asperiores? Velit consequatur repellat corporis possimus fuga. Ullam id cupiditate ipsa modi quas? Fugiat delectus sint excepturi maiores commodi! Saepe totam eum velit labore beatae Est in dolor excepturi eius illum? Itaque corporis tempora reiciendis voluptas similique mollitia? Blanditiis libero et neque facilis quos. Necessitatibus molestiae molestias doloremque quasi nemo. Id culpa voluptatum dolore rem aspernatur? Doloremque minus optio facilis lorem porro? Laboriosam quia molestiae recusandae quos molestias? Eligendi non veniam architecto fuga unde rerum! Magni suscipit iure maiores voluptas exercitationem? Possimus praesentium odit distinctio asperiores quod ipsum. Facere ipsam repellendus incidunt placeat debitis, autem</p>
+	        </div>
+	    </article>
+	    <article class="comment">
+	        <h2>Fant min nye reisepartner</h2>
+	        <div>
+	            <figure>
+	                <img src="./img/lady_canvas.jpg" alt="man in shadow paint on canvas, tellow flower pictures on tarp wall in background">
+	                <figcaption>Nina Gudvangen</figcaption>
+	            </figure>
+	            <p>Amet alias eius enim cum asperiores? Velit consequatur repellat corporis possimus fuga. Ullam id cupiditate ipsa modi quas? Fugiat delectus sint excepturi maiores commodi! Saepe totam eum velit labore beatae Est in dolor excepturi eius illum? Itaque corporis tempora reiciendis voluptas similique mollitia? Blanditiis libero et neque facilis quos. Necessitatibus molestiae molestias doloremque quasi nemo. Id culpa voluptatum dolore rem aspernatur? Doloremque minus optio facilis lorem porro? Laboriosam quia molestiae recusandae quos molestias? Eligendi non veniam architecto fuga unde rerum! Magni suscipit iure maiores voluptas exercitationem? Possimus praesentium odit distinctio asperiores quod ipsum. Facere ipsam repellendus incidunt placeat debitis, autem</p>
 	        </div>
 	    </article>
     </main>
