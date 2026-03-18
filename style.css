@@ -26,7 +26,7 @@
  }
 
 /*Fonts*/
-h1, h2, h3, h4, .nav-btn, .submit-btn, label:has(+input){
+h1, h2, h3, h4, .nav-btn, .submit-btn, label:has(+input, +textarea){
 /*lugrasimo-regular*/
     font-family: "Lugrasimo", cursive;
     font-weight: 400;
@@ -34,7 +34,7 @@ h1, h2, h3, h4, .nav-btn, .submit-btn, label:has(+input){
 }
 
 /*force lineshift after label headers*/
-label:has(+input) {
+label:has(+input, +textarea) {
     display: block;
 }
 
